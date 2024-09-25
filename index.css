@@ -1,0 +1,87 @@
+
+body {
+    margin: 0; /* Remove margens padrão do corpo da página */
+    width: 100vw; /* Define a largura do corpo da página como 100% da largura da tela */
+    height: 100vh; /* Define a altura do corpo da página como 100% da altura da tela */
+    background-color: #e2e2e2;
+    }
+
+
+.navbar{
+    background-color:  #dfa45b;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    width: 100%;
+}
+
+.link{
+    color: #ffffff;
+    text-decoration: none;
+    padding: 20px;
+    transition: background-color 0.3s ease;
+    font-size: x-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#icone{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    margin-left: 3%;
+}
+
+#nomedosite{
+    color: #ffffff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 3.6rem;
+    margin-left: 10%;
+    margin-top: -0.3%;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff; /* Cor inicial da palavra */
+    transition: font-size 0.3s ease-in-out, color 0.3s ease-in-out; /* Transições suaves para cor e tamanho */
+}
+
+a:hover {
+    text-decoration: none;
+    color: #ff0000; /* Cor do link ao passar o mouse */
+}
+
+/* Animação para cada palavra ao passar o mouse sobre o contêiner */
+.link:hover{
+    animation: moverParaCimaParaBaixo 0.9s ease-in-out infinite;  /* Aplica a animação quando o mouse está sobre o contêiner */
+}
+
+@keyframes moverParaCimaParaBaixo {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px); /* Move a palavra para cima */
+    }
+    100% {
+        transform: translateY(0px); /* Retorna a palavra à posição inicial */
+    }
+}
+
+
+
+.fundo {
+    margin: 0; /* Remove margens padrão do body */
+    padding: 0; /* Remove padding padrão do body */
+    background-image: url('caminho/para/sua/imagem.jpg'); /* Substitua pelo caminho da sua imagem */
+    background-size: cover; /* Faz a imagem cobrir todo o fundo */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita a repetição da imagem */
+    background-attachment: fixed; /* Mantém a imagem de fundo fixa durante o scroll */
+    height: 100vh; /* Garante que o body cubra toda a altura da viewport */
+    display: flex;
+    justify-content: center; /* Alinha o conteúdo horizontalmente */
+    align-items: center; /* Alinha o conteúdo verticalmente */
+    color: white; /* Cor do texto sobre o fundo */
+    text-align: center; /* Alinha o texto ao centro */
+}
